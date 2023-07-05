@@ -9,9 +9,44 @@
 <body>
     <div class="container">
         <div class="lock-logo-div">
-            <img src=".assets/icon64.png" alt="icon of the password extension">
+            <img src="assets/icon64.png" alt="icon of the password extension">
         </div>
     </div>
+
+    <section class="settings-container">
+        <div class="setting">
+            <label for="includeDigits">
+                <span>Include digits?</span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="includeDigits" checked>
+        </div>
+        <div class="setting">
+            <label for="specCharacters">
+                <span>Include special characters?</span>
+                <span></span>
+            </label>
+            <input type="checkbox" id="specCharacters">
+        </div>
+        <div class="setting">
+            <label for="mixedCases">
+                <span>Include lowercase and uppercase letters?</span>
+                <span>by default, lowercase letters are used</span>
+            </label>
+            <input type="checkbox" id="mixedCases" checked>
+        </div>
+    </section>
+
+    <section class="char-length">
+        <p>Your password will be <span id="passLength">??</span> characters long.</p>
+        <p>adjust the slider to change the length of your password</p>
+        <input type="range" id="passLengthSlider" min="10" max="75" value="20">
+    </section>
+
+    <section class="generated">
+        <input type="text" id="generated" spellcheck="false">
+        <button class="copy-pass" id="copyPass">copy</button>
+    </section>
 
     <script src="./scripts/app.js"></script>
 </body>

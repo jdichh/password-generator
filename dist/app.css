@@ -89,7 +89,7 @@ section.settings-container .setting input[type=checkbox]::after {
   transition: all 0.2s ease;
 }
 section.settings-container .setting input[type=checkbox]:checked {
-  background-color: #7ed0ec;
+  background-color: #d69200;
 }
 section.settings-container .setting input[type=checkbox]:checked::after {
   left: 70%;
@@ -102,6 +102,10 @@ section.char-length {
 section.char-length p:first-of-type {
   font-weight: 500;
   font-size: 0.9rem;
+}
+section.char-length p:first-of-type span {
+  font-weight: 500;
+  color: #d69200;
 }
 section.char-length input[type=range] {
   -webkit-appearance: none;
@@ -121,11 +125,11 @@ section.char-length input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   margin-top: -7px;
-  background-color: #7ed0ec;
+  background-color: #d69200;
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  outline: 1px solid #7ed0ec;
+  outline: 1px solid #d69200;
   outline-offset: 0.1rem;
 }
 
@@ -156,7 +160,7 @@ section.generated button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: #7ed0ec;
+  border: #d69200;
   border-radius: 0 0.25rem 0.25rem 0;
   background-color: #cccfd3;
   cursor: pointer;
@@ -164,7 +168,7 @@ section.generated button {
   transition: background-color 0.2s ease;
 }
 section.generated button:hover {
-  background-color: #7ed0ec;
+  background-color: #d69200;
 }
 section.generated .confirm {
   position: absolute;

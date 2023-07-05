@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap");
 
-$primary: #7ed0ec;
+$primary: #d69200;
 $bg: #222222;
 $text-dark: #616b74;
 $text-darker: #465059;
@@ -117,6 +117,10 @@ section.char-length {
   p:first-of-type {
     font-weight: 500;
     font-size: 0.9rem;
+    span {
+      font-weight: 500;
+      color: $primary;
+    }
   }
 
   input[type="range"] {

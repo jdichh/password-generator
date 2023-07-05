@@ -1,1 +1,96 @@
-/*# sourceMappingURL=app.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #222222;
+  color: #616b74;
+  padding: 3rem 0.5rem 0.5rem;
+}
+
+.container {
+  width: 400px;
+  background-color: #F5F5F5;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.lock-logo {
+  position: absolute;
+  top: -25px;
+  left: 1rem;
+  height: 50px;
+  width: 50px;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.lock-logo img {
+  width: 2.5rem;
+}
+
+section.settings-container p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+section.settings-container .setting {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+section.settings-container .setting label {
+  width: 80%;
+  padding-right: 1rem;
+}
+section.settings-container .setting label span {
+  display: block;
+}
+section.settings-container .setting label span:first-of-type {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+section.settings-container .setting label span:last-of-type {
+  font-weight: 300;
+  color: #616b74;
+  font-size: 0.7rem;
+  margin-top: 0.15rem;
+}
+section.settings-container .setting input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  width: 50px;
+  background-color: #CCCFD3;
+  height: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+section.settings-container .setting input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, 50%);
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 50%;
+  top: -20%;
+  left: 30%;
+  transition: all 0.2s ease;
+}
+section.settings-container .setting input[type=checkbox]:checked {
+  background-color: #7ED0EC;
+}
+section.settings-container .setting input[type=checkbox]:checked::after {
+  left: 70%;
+}/*# sourceMappingURL=app.css.map */

@@ -16,8 +16,8 @@ body {
 
 .container {
   width: 400px;
-  background-color: #F5F5F5;
-  border-radius: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 0.25rem;
   padding: 1.5rem;
   position: relative;
 }
@@ -70,9 +70,9 @@ section.settings-container .setting input[type=checkbox] {
           appearance: none;
   position: relative;
   width: 50px;
-  background-color: #CCCFD3;
+  background-color: #cccfd3;
   height: 30px;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -83,13 +83,13 @@ section.settings-container .setting input[type=checkbox]::after {
   width: 21px;
   height: 21px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 20px;
   top: -20%;
   left: 30%;
   transition: all 0.2s ease;
 }
 section.settings-container .setting input[type=checkbox]:checked {
-  background-color: #7ED0EC;
+  background-color: #7ed0ec;
 }
 section.settings-container .setting input[type=checkbox]:checked::after {
   left: 70%;
@@ -103,9 +103,6 @@ section.char-length p:first-of-type {
   font-weight: 500;
   font-size: 0.9rem;
 }
-section.char-length p:first-of-type span {
-  color: #7ED0EC;
-}
 section.char-length input[type=range] {
   -moz-appearance: none;
        appearance: none;
@@ -117,17 +114,82 @@ section.char-length input[type=range] {
   border-radius: 25px;
 }
 section.char-length input[type=range]::-webkit-slider-runnable-track {
-  background-color: #CCCFD3;
+  background-color: #cccfd3;
   height: 0.15rem;
 }
 section.char-length input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   margin-top: -7px;
-  background-color: #7ED0EC;
+  background-color: #7ed0ec;
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
-  outline: 1px solid #7ED0EC;
+  outline: 1px solid #7ed0ec;
   outline-offset: 0.1rem;
+}
+
+section.generated {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+section.generated input,
+section.generated button {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  height: 2rem;
+}
+section.generated input {
+  width: 100%;
+  border-radius: 0.25rem 0 0 0.25rem;
+  border: 1.5px solid #cccfd3;
+  outline: none;
+  border-right: none;
+  background-color: #f5f5f5;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-size: 1rem;
+  color: #616b74;
+}
+section.generated button {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #7ed0ec;
+  border-radius: 0 0.25rem 0.25rem 0;
+  background-color: #cccfd3;
+  cursor: pointer;
+  color: #465059;
+  transition: background-color 0.2s ease;
+}
+section.generated button:hover {
+  background-color: #7ed0ec;
+}
+section.generated .confirm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+section.generated .confirm p {
+  transform: scale(0.2);
+  transition: transform 0.2s ease;
+}
+section.generated .confirm.active {
+  pointer-events: all;
+  opacity: 1;
+}
+section.generated .confirm.active p {
+  transform: scale(1);
 }/*# sourceMappingURL=app.css.map */

@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/app.css" />
     <title>Jason's Password Generator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="lock-logo">
-            <img src="assets/icon64.png" alt="icon of the password extension">
-            
-        </div>
-
-    <section class="settings-container">
+      <section class="settings-container">
         <p>Jason's Password Generator</p>
         <div class="setting">
-            <label for="includeDigits">
-                <span>Digits?</span>
-                <span></span>
-            </label>
-            <input type="checkbox" id="includeDigits" checked>
+          <label for="includeDigits">
+            <span>Include Digits?</span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="includeDigits" checked />
         </div>
         <div class="setting">
-            <label for="specCharacters">
-                <span>Special characters?</span>
-                <span></span>
-            </label>
-            <input type="checkbox" id="specCharacters">
+          <label for="specCharacters">
+            <span>Include Special Characters?</span>
+            <span></span>
+          </label>
+          <input type="checkbox" id="specCharacters" />
         </div>
         <div class="setting">
-            <label for="mixedCases">
-                <span>Lowercase and uppercase letters?</span>
-                <span>lowercase letters are used by default</span>
-            </label>
-            <input type="checkbox" id="mixedCases" checked>
+          <label for="mixedCases">
+            <span>Include Lower and Uppercase Letters?</span>
+            <span>lowercase letters are used by default</span>
+          </label>
+          <input type="checkbox" id="mixedCases" checked />
         </div>
-    </section>
+      </section>
 
-    <section class="char-length">
-        <p>Your password will be <span id="passLength">??</span> characters long.</p>
-        <input type="range" id="passLengthSlider" min="10" max="75" value="20">
-    </section>
+      <section class="char-length">
+        <p>
+          Your password will be <span id="passLength">??</span> characters long.
+        </p>
+        <input
+          type="range"
+          id="passLengthSlider"
+          min="10"
+          max="75"
+          value="20"
+        />
+      </section>
 
-    <section class="generated">
-        <input type="text" id="generated" spellcheck="false">
+      <section class="generated">
+        <input type="text" id="generated" spellcheck="false" />
         <button class="copy-pass" id="copyPass">copy</button>
         <div class="confirm" id="confirm">
-            <p>copied!</p>
+          <p>copied!</p>
         </div>
-    </section>
+      </section>
     </div>
 
-
     <script src="./scripts/app.js"></script>
-</body>
+  </body>
 </html>

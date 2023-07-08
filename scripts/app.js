@@ -42,6 +42,10 @@ const generatePassword = (length) => {
     });
   }
 
+  for (let i = 0; i <= length; i++) {
+    generatedPasswordInput.value +=
+      possiblePassword[Math.floor(Math.random() * possiblePassword.length)];
+  }
 };
 
 generatePassword(passLength.value);

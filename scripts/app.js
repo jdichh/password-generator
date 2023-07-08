@@ -60,3 +60,13 @@ allCheckBoxes.forEach((checkbox) => {
     generatePassword(passLength.value);
   });
 });
+
+const copyPassword = document.getElementById("copyPass");
+const confirmCopy = document.getElementById("confirm");
+copyPassword.addEventListener("click", () => {
+  navigator.clipboard.writeText(generatedPasswordInput.value);
+  confirmCopy.classList.add("active");
+  setTimeout(() => {
+    confirmCopy.classList.remove("active");
+  }, 1500);
+});
